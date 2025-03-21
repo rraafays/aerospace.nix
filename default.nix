@@ -54,6 +54,15 @@
       hidpi = true;
       active_color = "0xFFFFFFFF";
       inactive_color = "0xFF141414";
+      width = 3.0;
+    };
+
+    skhd = {
+      enable = true;
+      skhdConfig = ''
+        cmd + h : skhd -k "ctrl + h"
+        cmd + m : skhd -k "ctrl + m"
+      '';
     };
   };
 
