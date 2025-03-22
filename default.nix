@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services = {
@@ -15,6 +15,9 @@
         };
 
         mode.main.binding = {
+          cmd-h = "exec-and-forget ${pkgs.skhd}/bin/skhd -k 'ctrl - h'";
+          cmd-m = "exec-and-forget ${pkgs.skhd}/bin/skhd -k 'ctrl - m'";
+
           alt-cmd-ctrl-enter = "exec-and-forget open -a kitty -n --args /run/current-system/sw/bin/tmux new-session -A -c ~/ -s main >/dev/null 2>&1";
           alt-cmd-ctrl-m = "macos-native-fullscreen";
 
@@ -55,14 +58,6 @@
       active_color = "0xFFFFFFFF";
       inactive_color = "0xFF141414";
       width = 3.0;
-    };
-
-    skhd = {
-      enable = true;
-      skhdConfig = ''
-        cmd + h : skhd -k "ctrl + h"
-        cmd + m : skhd -k "ctrl + m"
-      '';
     };
   };
 
