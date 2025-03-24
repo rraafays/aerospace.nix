@@ -5,6 +5,7 @@
     aerospace = {
       enable = true;
       settings = {
+        default-root-container-layout = "tiles";
         gaps = {
           inner.horizontal = 20;
           inner.vertical = 20;
