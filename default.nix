@@ -19,7 +19,7 @@
           cmd-h = "exec-and-forget ${pkgs.skhd}/bin/skhd -k 'ctrl - h'";
           cmd-m = "exec-and-forget ${pkgs.skhd}/bin/skhd -k 'ctrl - m'";
 
-          alt-cmd-ctrl-enter = "exec-and-forget open -a kitty -n --args /run/current-system/sw/bin/tmux new-session -A -c ~/ -s main >/dev/null 2>&1";
+          alt-cmd-ctrl-enter = "exec-and-forget ${pkgs.kitty}/bin/kitty -1 ${pkgs.tmux}/bin/tmux new-session -A -c ~/ -s main >/dev/null 2>&1";
           alt-cmd-ctrl-m = "macos-native-fullscreen";
 
           alt-cmd-ctrl-left = "focus left";
