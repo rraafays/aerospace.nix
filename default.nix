@@ -21,6 +21,7 @@
 
           alt-cmd-ctrl-enter = "exec-and-forget ${pkgs.kitty}/bin/kitty -1 ${pkgs.tmux}/bin/tmux new-session -A -c ~/ -s main >/dev/null 2>&1";
           alt-cmd-ctrl-m = "macos-native-fullscreen";
+          alt-cmd-ctrl-q = "close";
 
           alt-cmd-ctrl-left = "focus left";
           alt-cmd-ctrl-down = "focus down";
