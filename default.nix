@@ -23,6 +23,9 @@
           alt-cmd-ctrl-m = "macos-native-fullscreen";
           alt-cmd-ctrl-q = "close";
 
+          alt-cmd-ctrl-semicolon = "layout tiles";
+          alt-cmd-ctrl-quote = "layout accordion";
+
           alt-cmd-ctrl-left = "focus left";
           alt-cmd-ctrl-down = "focus down";
           alt-cmd-ctrl-up = "focus up";
