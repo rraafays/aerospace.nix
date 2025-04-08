@@ -31,6 +31,11 @@
           alt-cmd-ctrl-up = "focus up";
           alt-cmd-ctrl-right = "focus right";
 
+          shift-alt-cmd-ctrl-left = "move left";
+          shift-alt-cmd-ctrl-down = "move down";
+          shift-alt-cmd-ctrl-up = "move up";
+          shift-alt-cmd-ctrl-right = "move right";
+
           alt-cmd-ctrl-1 = "workspace 1";
           alt-cmd-ctrl-2 = "workspace 2";
           alt-cmd-ctrl-3 = "workspace 3";
