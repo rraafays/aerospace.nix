@@ -66,7 +66,7 @@
       order = "above";
       hidpi = true;
       active_color = "0xFFFFFFFF";
-      inactive_color = "0xFF141414";
+      inactive_color = "0xFF262626";
       width = 3.0;
     };
   };
