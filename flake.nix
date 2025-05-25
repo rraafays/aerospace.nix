@@ -9,12 +9,12 @@
     };
   };
 
-  outputs = { self, nixpkgs, darwin, ... }: {
-    darwinModules.desktop = { pkgs, ... }: {
+  outputs = { self, nixpkgs, nix-darwin, ... }: {
+    darwinModules.aerospace = { pkgs, ... }: {
       imports = [ ./default.nix ];
     };
 
-    darwinConfigurations.aerospace = darwin.lib.darwinSystem {
+    darwinConfigurations.aerospace = nix-darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [ self.darwinModules.aerospace ];
     };
