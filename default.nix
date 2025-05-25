@@ -57,18 +57,18 @@
         };
       };
     };
-
-    jankyborders = {
-      enable = true;
-      order = "above";
-      hidpi = true;
-      active_color = "0xFFFFFFFF";
-      inactive_color = "0xFF262626";
-      width = 3.0;
-    };
   };
 
   launchd.daemons = {
+    borders = {
+      script = ''
+        ${pkgs.jankyborders}/bin/borders order=above active_color=0xFFFFFFFF inactive_color=0xFF262626 width=3.0
+      '';
+      serviceConfig = {
+        KeepAlive = true;
+        RunAtLoad = true;
+      };
+    };
     wallpaper = {
       script = ''
         osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file"
