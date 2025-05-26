@@ -59,6 +59,7 @@
     };
   };
 
+  environment.systemPackages = [ pkgs.jankyborders ];
   launchd.daemons = {
     borders = {
       script = ''
