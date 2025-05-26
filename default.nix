@@ -63,7 +63,7 @@
   launchd.daemons = {
     borders = {
       script = ''
-        ${pkgs.jankyborders}/bin/borders order=above active_color=0xFFFFFFFF inactive_color=0xFF262626 width=3.0
+        exec ${pkgs.jankyborders}/bin/borders order=above active_color=0xFFFFFFFF inactive_color=0xFF262626 width=3.0
       '';
       serviceConfig = {
         KeepAlive = true;
@@ -72,7 +72,7 @@
     };
     wallpaper = {
       script = ''
-        osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file"
+        exec osascript -e "tell application \"System Events\" to tell every desktop to set picture to \"/System/Library/Desktop Pictures/Solid Colors/Black.png\" as POSIX file"
       '';
       serviceConfig = {
         KeepAlive = true;
