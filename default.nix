@@ -9,7 +9,7 @@
         gaps = {
           inner.horizontal = 20;
           inner.vertical = 20;
-          outer.top = 5;
+          outer.top = 10;
           outer.right = 20;
           outer.bottom = 20;
           outer.left = 20;
