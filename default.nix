@@ -54,6 +54,28 @@
           shift-alt-cmd-ctrl-8 = "move-node-to-workspace 8";
           shift-alt-cmd-ctrl-9 = "move-node-to-workspace 9";
           shift-alt-cmd-ctrl-0 = "move-node-to-workspace 10";
+
+          alt-cmd-ctrl-f1 = "focus-monitor 1";
+          alt-cmd-ctrl-f2 = "focus-monitor 2";
+          alt-cmd-ctrl-f3 = "focus-monitor 3";
+          alt-cmd-ctrl-f4 = "focus-monitor 4";
+          alt-cmd-ctrl-f5 = "focus-monitor 5";
+          alt-cmd-ctrl-f6 = "focus-monitor 6";
+          alt-cmd-ctrl-f7 = "focus-monitor 7";
+          alt-cmd-ctrl-f8 = "focus-monitor 8";
+          alt-cmd-ctrl-f9 = "focus-monitor 9";
+          alt-cmd-ctrl-f10 = "focus-monitor 10";
+
+          shift-alt-cmd-ctrl-f1 = "move-node-to-monitor 1";
+          shift-alt-cmd-ctrl-f2 = "move-node-to-monitor 2";
+          shift-alt-cmd-ctrl-f3 = "move-node-to-monitor 3";
+          shift-alt-cmd-ctrl-f4 = "move-node-to-monitor 4";
+          shift-alt-cmd-ctrl-f5 = "move-node-to-monitor 5";
+          shift-alt-cmd-ctrl-f6 = "move-node-to-monitor 6";
+          shift-alt-cmd-ctrl-f7 = "move-node-to-monitor 7";
+          shift-alt-cmd-ctrl-f8 = "move-node-to-monitor 8";
+          shift-alt-cmd-ctrl-f9 = "move-node-to-monitor 9";
+          shift-alt-cmd-ctrl-f10 = "move-node-to-monitor 10";
         };
       };
     };
